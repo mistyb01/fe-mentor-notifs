@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
 
 * {
     margin: 0;
@@ -30,6 +30,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between; /*flex-start;*/
+    align-items: flex-start;
     column-gap: 1rem;
 }
 
@@ -69,6 +70,7 @@ main {
 .img-preview {
     margin-left: 3rem;
     width: 50px;
+    height: auto;
 }
 
 .club-name {
@@ -90,9 +92,13 @@ main {
     margin-top: 1rem;
 }
 
+.comment-block:hover {
+    background-color: hsl(205, 33%, 90%);
+}
+
 h1 {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 800;
     color:#000;
 }
 
@@ -106,7 +112,7 @@ h1 {
     border-radius: 5px;
     background-color: hsl(224, 51%, 39%);
     color: #fff;
-    padding: 0.1rem 0.75rem;
+    padding: 0.25rem 0.75rem;
     margin-left: 0.5rem;
     font-size: 1rem;
 }
@@ -117,6 +123,20 @@ h1 {
     column-gap: 1rem;
 }
 
-#mark-read:hover {
-    color: hsl(217, 93%, 47%);
+#mark-read:hover,
+.club-name:hover,
+.post-name:hover,
+b:hover {
+    color: hsl(217, 63%, 44%);
 }
+
+@media only screen and (max-width: 768px) {
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+    body {
+        background-color: #fff;
+    }
+
+  }
