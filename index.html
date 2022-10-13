@@ -1,51 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Notifications page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Notifications page</title>
 
-  Notifications 3
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="heading">
+        <div class="heading-text">
+          <h1>Notifications <span class="notif-number">3</span></h1>
+        </div>
 
-  Mark all as read
+        <span class="mark-read">Mark all as read</span>
+      </div>
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
+      <div class="notif-container">
+        <div class="notif new">
+          <img src="./assets/images/avatar-mark-webber.webp" class="avatar" />
+          <div class="notif-text">
+            <b>Mark Webber</b> reacted to your recent post
+            <span class="post-name"> My first tournament today! </span>
+            <span class="time-text">1m ago</span>
+          </div>
+        </div>
 
-  Angela Gray followed you
-  5m ago
+        <div class="notif new">
+          <img src="./assets/images/avatar-angela-gray.webp" class="avatar" />
+          <div class="notif-text">
+            <b>Angela Gray</b> followed you
+            <span class="time-text">5m ago</span>
+          </div>
+        </div>
 
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
+        <div class="notif new">
+          <img
+            src="./assets/images/avatar-jacob-thompson.webp"
+            class="avatar"
+          />
+          <div class="notif-text">
+            <b>Jacob Thompson</b> has joined your group
+            <span class="club-name">Chess Club</span>
+            <span class="time-text">1 day ago</span>
+          </div>
+        </div>
 
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
+        <div class="notif">
+          <img
+            src="./assets/images/avatar-rizky-hasanuddin.webp"
+            class="avatar"
+          />
+          <div class="notif-text">
+            <b>Rizky Hasanuddin</b> sent you a private message
+            <span class="time-text">5 days ago</span>
+            <div class="comment-block">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </div>
+          </div>
+        </div>
 
-  Kimberly Smith commented on your picture
-  1 week ago
+        <div class="notif">
+          <img
+            src="./assets/images/avatar-kimberly-smith.webp"
+            class="avatar"
+          />
+          <div class="notif-text">
+            <b>Kimberly Smith</b> commented on your picture
+            <span class="time-text">1 week ago</span>
+          </div>
+        </div>
 
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
+        <div class="notif">
+          <img
+            src="./assets/images/avatar-nathan-peterson.webp"
+            class="avatar"
+          />
+          <div class="notif-text">
+            <b>Nathan Peterson</b> reacted to your recent post
+            <span class="post-name">
+              5 end-game strategies to increase your win rate
+            </span>
+            <span class="time-text">2 weeks ago</span>
+          </div>
+        </div>
 
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div class="notif">
+          <img src="./assets/images/avatar-anna-kim.webp" class="avatar" />
+          <div class="notif-text">
+            <b>Anna Kim</b> left the group
+            <span class="club-name">Chess Club</span>
+            <span class="time-text">2 weeks ago</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
