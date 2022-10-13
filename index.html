@@ -30,89 +30,106 @@
     <main>
       <div class="heading">
         <div class="heading-text">
-          <h1>Notifications <span class="notif-number">3</span></h1>
+          <h1>Notifications <span id="notif-number">3</span></h1>
         </div>
-
-        <span class="mark-read">Mark all as read</span>
+        <span id="mark-read">Mark all as read</span>
       </div>
 
       <div class="notif-container">
         <div class="notif new">
-          <img src="./assets/images/avatar-mark-webber.webp" class="avatar" />
-          <div class="notif-text">
-            <b>Mark Webber</b> reacted to your recent post
-            <span class="post-name"> My first tournament today! </span>
-            <span class="time-text">1m ago</span>
+          <div class="user-info">
+            <img src="./assets/images/avatar-mark-webber.webp" class="avatar" />
+            <div class="notif-text">
+              <b>Mark Webber</b> reacted to your recent post
+              <span class="post-name"> My first tournament today!</span>
+              <span class="dot"></span>
+              <span class="time-text">1m ago</span>
+            </div>
           </div>
         </div>
 
         <div class="notif new">
-          <img src="./assets/images/avatar-angela-gray.webp" class="avatar" />
-          <div class="notif-text">
-            <b>Angela Gray</b> followed you
-            <span class="time-text">5m ago</span>
+          <div class="user-info">
+            <img src="./assets/images/avatar-angela-gray.webp" class="avatar" />
+            <div class="notif-text">
+              <b>Angela Gray</b> followed you
+              <span class="dot"></span>
+              <span class="time-text">5m ago</span>
+            </div>
           </div>
         </div>
 
         <div class="notif new">
-          <img
-            src="./assets/images/avatar-jacob-thompson.webp"
-            class="avatar"
-          />
-          <div class="notif-text">
-            <b>Jacob Thompson</b> has joined your group
-            <span class="club-name">Chess Club</span>
-            <span class="time-text">1 day ago</span>
-          </div>
-        </div>
-
-        <div class="notif">
-          <img
-            src="./assets/images/avatar-rizky-hasanuddin.webp"
-            class="avatar"
-          />
-          <div class="notif-text">
-            <b>Rizky Hasanuddin</b> sent you a private message
-            <span class="time-text">5 days ago</span>
-            <div class="comment-block">
-              Hello, thanks for setting up the Chess Club. I've been a member
-              for a few weeks now and I'm already having lots of fun and
-              improving my game.
+          <div class="user-info">
+            <img
+              src="./assets/images/avatar-jacob-thompson.webp"
+              class="avatar"
+            />
+            <div class="notif-text">
+              <b>Jacob Thompson</b> has joined your group
+              <span class="club-name">Chess Club</span>
+              <span class="dot"></span>
+              <span class="time-text">1 day ago</span>
             </div>
           </div>
         </div>
 
         <div class="notif">
-          <img
-            src="./assets/images/avatar-kimberly-smith.webp"
-            class="avatar"
-          />
-          <div class="notif-text">
-            <b>Kimberly Smith</b> commented on your picture
-            <span class="time-text">1 week ago</span>
+          <div class="user-info">
+            <img
+              src="./assets/images/avatar-rizky-hasanuddin.webp"
+              class="avatar"
+            />
+            <div class="notif-text">
+              <b>Rizky Hasanuddin</b> sent you a private message
+              <span class="time-text">5 days ago</span>
+              <div class="comment-block">
+                Hello, thanks for setting up the Chess Club. I've been a member
+                for a few weeks now and I'm already having lots of fun and
+                improving my game.
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="notif">
-          <img
-            src="./assets/images/avatar-nathan-peterson.webp"
-            class="avatar"
-          />
-          <div class="notif-text">
-            <b>Nathan Peterson</b> reacted to your recent post
-            <span class="post-name">
-              5 end-game strategies to increase your win rate
-            </span>
-            <span class="time-text">2 weeks ago</span>
+          <div class="user-info">
+            <img
+              src="./assets/images/avatar-kimberly-smith.webp"
+              class="avatar"
+            />
+            <div class="notif-text">
+              <b>Kimberly Smith</b> commented on your picture
+              <span class="time-text">1 week ago</span>
+            </div>
+          </div>
+          <img src="./assets/images/image-chess.webp" class="img-preview" />
+        </div>
+
+        <div class="notif">
+          <div class="user-info">
+            <img
+              src="./assets/images/avatar-nathan-peterson.webp"
+              class="avatar"
+            />
+            <div class="notif-text">
+              <b>Nathan Peterson</b> reacted to your recent post
+              <span class="post-name">
+                5 end-game strategies to increase your win rate
+              </span>
+              <span class="time-text">2 weeks ago</span>
+            </div>
           </div>
         </div>
 
         <div class="notif">
-          <img src="./assets/images/avatar-anna-kim.webp" class="avatar" />
-          <div class="notif-text">
-            <b>Anna Kim</b> left the group
-            <span class="club-name">Chess Club</span>
-            <span class="time-text">2 weeks ago</span>
+          <div class="user-info">
+            <img src="./assets/images/avatar-anna-kim.webp" class="avatar" />
+            <div class="notif-text">
+              <b>Anna Kim</b> left the group
+              <span class="club-name">Chess Club</span>
+              <span class="time-text">2 weeks ago</span>
+            </div>
           </div>
         </div>
       </div>
@@ -124,5 +141,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
