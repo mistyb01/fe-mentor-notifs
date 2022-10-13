@@ -11,6 +11,6 @@ function markAllAsRead() {
     Array.from(dots).forEach(dot => dot.parentNode.removeChild(dot));
     const notifNumber = document.getElementById('notif-number');
     console.log(notifNumber);
-    notifNumber.parentNode.removeChild(notifNumber);
+    notifNumber.innerHTML = '0';
 }
 
